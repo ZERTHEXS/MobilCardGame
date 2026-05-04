@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: abf74e7e952895d4eb7024b12f56b367, type: 3}
-  m_Name: Card_000
+  m_Name: Card_000 2
   m_EditorClassIdentifier: Assembly-CSharp::CardSciptableObject
   ID: 0
-  cardName: Chevalier du Swag
-  cardIllu: {fileID: 21300000, guid: e42d514f0db22674c816aa09194b69cd, type: 3}
-  cardRank: 3
+  cardName: ChatDeFeu
+  cardIllu: {fileID: 664015841200473790, guid: 410fd5d945bcfe24398f710534e3e962, type: 3}
+  cardRank: 1
   cardStats:
+  - type: 3
+    value: 3
+    heritage: 1
+  - type: 3
+    value: 2
+    heritage: 1
+  - type: 0
+    value: 1
+    heritage: 0
   - type: 0
     value: 2
     heritage: 0
-  - type: 2
-    value: 1
-    heritage: 1
-  - type: 4
-    value: 5
-    heritage: 0
-  - type: 1
-    value: 3
-    heritage: 1
   cardEffect:
   - {fileID: 0}

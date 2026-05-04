@@ -150,7 +150,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   cardPrefab: {fileID: 8371882556008815217, guid: c0aa9990b795d1b4ebf6f68b8747ddab, type: 3}
   canvas: {fileID: 1793173151}
-  cardSciptableObject: {fileID: 11400000, guid: 47a7dc99020f3a742af79ea551bae622, type: 2}
+  cardSciptableObject:
+  - {fileID: 11400000, guid: 47a7dc99020f3a742af79ea551bae622, type: 2}
+  - {fileID: 11400000, guid: 6e99303b5a975d8499e7d426416fcd9d, type: 2}
+  - {fileID: 11400000, guid: 46916240b7ce5ac489410c62747b2076, type: 2}
+  - {fileID: 11400000, guid: 737c9eb5ed61d9445926099ac365df35, type: 2}
 --- !u!4 &92117653
 Transform:
   m_ObjectHideFlags: 0

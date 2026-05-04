@@ -22,12 +22,10 @@ public class CardViewManager : MonoBehaviour
         cardName.text = data.cardName;
         illustration.sprite = data.cardIllu;
 
+       
         for (int i = 0; i < stat.Count; i++)
         {
-            stat[i].text=data.cardStats[i].value.ToString();            
-        }
-        for (int i = 0; i < stat.Count; i++)
-        {
+            stat[i].text=data.cardStats[i].value.ToString();   
              switch (data.cardStats[i].type)
             {
                 case StatType.Attaque:
@@ -45,10 +43,7 @@ public class CardViewManager : MonoBehaviour
                 case StatType.Tresor:
                 statType[i].sprite = StatTypeSprite[4];
                 break;
-            }            
-        }
-        for (int i = 0; i < stat.Count; i++)
-        {
+            }     
              switch (data.cardStats[i].heritage)
             {
                 case false:
@@ -57,9 +52,9 @@ public class CardViewManager : MonoBehaviour
                 case true:
                 Heritage[i].gameObject.SetActive(false);
                 break;
-            }
-            
+            }       
         }
+       
 
         switch (data.cardRank)
         {
