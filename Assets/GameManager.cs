@@ -19,44 +19,34 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CardSlot b1Slot;
     [SerializeField] private CardSlot b2Slot;
     [SerializeField] private CardSlot discardSlot;
+    [SerializeField] private int DammageDeal;
+    [SerializeField] private int ArmorDeal;
+    [SerializeField] private int HealDeal;
+    [SerializeField] private int GoldDeal;
+    [SerializeField] private int TresorDeal;
+
 
     private void Update()
     {
-        // TEST : Spawn une carte dans current
         if (Input.GetKeyDown(KeyCode.A))
         {
             SpawnCardInSlot(currentSlot);
         }
-
-        // TEST : Spawn une carte dans A2
         if (Input.GetKeyDown(KeyCode.Z))
         {
             PlayCard(currentSlot,b1Slot);
         }
-
-        // TEST : Joue la carte de A1
         if (Input.GetKeyDown(KeyCode.E))
         {
             PlayCard(currentSlot,a1Slot);
         }
     }
 
-    // =========================
-    // CREATE CARD
-    // =========================
-
     public CardInstance CreateCard(CardSciptableObject data)
     {
-        // Spawn prefab
         GameObject cardGO = Instantiate(cardPrefab, cardParent);
-
-        // Get view
         CardViewManager view = cardGO.GetComponent<CardViewManager>();
-
-        // Init UI
         view.Init(data);
-
-        // Create runtime instance
         CardInstance instance = new CardInstance();
 
         instance.data = data;
@@ -64,11 +54,6 @@ public class GameManager : MonoBehaviour
 
         return instance;
     }
-
-    // =========================
-    // SPAWN RANDOM CARD
-    // =========================
-
     public void SpawnCardInSlot(CardSlot slot)
     {
         if (slot.currentCard != null)
@@ -85,20 +70,64 @@ public class GameManager : MonoBehaviour
 
         slot.MoveCardToSlot(instance);
     }
-
-    // =========================
-    // PLAY CARD
-    // =========================
-
     public void PlayCard(CardSlot playedSlot, CardSlot MoveSlot)
     {
+        
+        DammageDeal=0;
+        ArmorDeal=0;
+        HealDeal=0;
+        GoldDeal=0;
+        TresorDeal=0;
+
+        for (int i = 0; i < 4; i++)
+        {
+            switch ( playedSlot.currentCard.data.cardStats[i].type)
+            {
+                case StatType.Attaque:
+                DammageDeal += playedSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Defence:
+                ArmorDeal += playedSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Heal:
+                HealDeal += playedSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Monney:
+                GoldDeal += playedSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Tresor:
+                TresorDeal += playedSlot.currentCard.data.cardStats[i].value;
+                break;
+            }  
+            if (playedSlot.currentCard.data.cardStats[i].heritage == true && MoveSlot.currentCard != null)
+            {
+                 switch ( MoveSlot.currentCard.data.cardStats[i].type)
+            {
+                case StatType.Attaque:
+                DammageDeal += MoveSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Defence:
+                ArmorDeal += MoveSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Heal:
+                HealDeal += MoveSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Monney:
+                GoldDeal += MoveSlot.currentCard.data.cardStats[i].value;
+                break;
+                case StatType.Tresor:
+                TresorDeal += MoveSlot.currentCard.data.cardStats[i].value;
+                break;
+            } 
+            }
+        }
+        Debug.Log($"DamageDeal : {DammageDeal} ArmorDeal : {ArmorDeal} HealDeal : {HealDeal} GoldDeal : {GoldDeal} TresorDeal : {TresorDeal}");
+        
         if (playedSlot.currentCard == null)
         {
             Debug.Log("No card in slot");
             return;
         }
-
-        // Ancienne current -> discard
         if (MoveSlot.currentCard != null && MoveSlot==a1Slot)
         { 
             if (a2Slot.currentCard != null)
@@ -115,14 +144,8 @@ public class GameManager : MonoBehaviour
         }
             b2Slot.MoveCardToSlot(MoveSlot.currentCard);
         }
-
-        // Nouvelle current
         MoveSlot.MoveCardToSlot(playedSlot.currentCard);
-
-        // Vide le slot joué
         playedSlot.currentCard = null;
-
-        // Refill automatiquement
         SpawnCardInSlot(playedSlot);
     }
 }
