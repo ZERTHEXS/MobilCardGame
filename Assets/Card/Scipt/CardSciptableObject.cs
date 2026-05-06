@@ -1,7 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-
-using UnityEngine.UI;
 [CreateAssetMenu(menuName ="Card/CardData")]
 public class CardSciptableObject : ScriptableObject
 {

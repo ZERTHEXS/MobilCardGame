@@ -9,7 +9,11 @@ public abstract class CardEffect : ScriptableObject
 public class CardInstance
 {
     public CardSciptableObject data;
-    public List<CardStats> modifieStats;
+
+    public CardViewManager view;
+
+    public CardSlot currentSlot;
+
 }
 public class CardContext
 {
