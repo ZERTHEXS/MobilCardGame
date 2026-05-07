@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: cf9192080fbacf843a5a1e7af80da8c6
+guid: f7e487562fa3bb948acc550d642ff4e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4102159462560029611
-    second: FondCardGame_0
+      213: 4124732602395055958
+    second: LineBDV_0
+  - first:
+      213: 2333009597527327802
+    second: LineBDV_1
+  - first:
+      213: -1738460776376579708
+    second: LineBDV_2
+  - first:
+      213: 7873397412022772565
+    second: LineBDV_3
+  - first:
+      213: 2101868801364158561
+    second: LineBDV_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FondCardGame_0
+      name: LineBDV_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 948
-        height: 1892
+        y: 18
+        width: 50
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5542a16f3b33217c0800000000000000
-      internalID: -4102159462560029611
+      spriteID: 657da37b27efd3930800000000000000
+      internalID: 4124732602395055958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LineBDV_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 74
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34813e3ed3806020800000000000000
+      internalID: 2333009597527327802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LineBDV_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 753
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489cf18722fbfd7e0800000000000000
+      internalID: -1738460776376579708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LineBDV_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 18
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553e81f2b3de34d60800000000000000
+      internalID: 7873397412022772565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LineBDV_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 73
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16869c5e9865b2d10800000000000000
+      internalID: 2101868801364158561
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FondCardGame_0: -4102159462560029611
+      LineBDV_0: 4124732602395055958
+      LineBDV_1: 2333009597527327802
+      LineBDV_2: -1738460776376579708
+      LineBDV_3: 7873397412022772565
+      LineBDV_4: 2101868801364158561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

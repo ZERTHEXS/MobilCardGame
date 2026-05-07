@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf9192080fbacf843a5a1e7af80da8c6
+guid: 8ae2cd3c856aca24a895ce09d9bfda9e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4102159462560029611
-    second: FondCardGame_0
+      213: -2316481257520702251
+    second: SpriteEnemie_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FondCardGame_0
+      name: SpriteEnemie_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 948
-        height: 1892
+        width: 170
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5542a16f3b33217c0800000000000000
-      internalID: -4102159462560029611
+      spriteID: 5dcd0acc1943adfd0800000000000000
+      internalID: -2316481257520702251
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FondCardGame_0: -4102159462560029611
+      SpriteEnemie_0: -2316481257520702251
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
