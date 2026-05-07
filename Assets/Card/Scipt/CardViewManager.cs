@@ -15,6 +15,8 @@ public class CardViewManager : MonoBehaviour
     public List<Image> Heritage;
     public List<Color> colors;
     public List<Sprite> StatTypeSprite;
+    public List<Sprite> StatTypeSpriteheritage;
+    public int StatTypeSpriteherit;
     private CardSciptableObject data;
     public void Init(CardSciptableObject cardData)
     {
@@ -25,34 +27,41 @@ public class CardViewManager : MonoBehaviour
        
         for (int i = 0; i < stat.Count; i++)
         {
+            StatTypeSpriteherit=0;
             stat[i].text=data.cardStats[i].value.ToString();   
              switch (data.cardStats[i].type)
             {
                 case StatType.Attaque:
                 statType[i].sprite = StatTypeSprite[0];
+                StatTypeSpriteherit=0;
                 break;
                 case StatType.Defence:
                 statType[i].sprite = StatTypeSprite[1];
+                StatTypeSpriteherit=1;
                 break;
                 case StatType.Heal:
                 statType[i].sprite = StatTypeSprite[2];
+                StatTypeSpriteherit=2;
                 break;
                 case StatType.Monney:
                 statType[i].sprite = StatTypeSprite[3];
+                StatTypeSpriteherit=3;
                 break;
                 case StatType.Tresor:
                 statType[i].sprite = StatTypeSprite[4];
+                StatTypeSpriteherit=4;
                 break;
             }     
              switch (data.cardStats[i].heritage)
             {
                 case false:
-                Heritage[i].gameObject.SetActive(true);
+                
                 break;
                 case true:
-                Heritage[i].gameObject.SetActive(false);
+                StatTypeSpriteherit+=5;
                 break;
-            }       
+            }   
+                Heritage[i].sprite = StatTypeSpriteheritage[StatTypeSpriteherit];
         }
        
 

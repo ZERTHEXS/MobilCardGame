@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
         GoldDeal=0;
         TresorDeal=0;
 
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 2; i++)
         {
             switch ( playedSlot.currentCard.data.cardStats[i].type)
             {

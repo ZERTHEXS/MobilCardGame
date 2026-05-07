@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: df5706635f7e8a74bbd8be682354ea75
+guid: 652495fcb253464488c21c0458cd7b3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7965479303314324529
-    second: LineCard_0
+      213: 6338647670189321466
+    second: AttaqueBoxH_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LineCard_0
+      name: AttaqueBoxH_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 713
-        height: 995
+        width: 344
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13cb6c339311b8e60800000000000000
-      internalID: 7965479303314324529
+      spriteID: afcedf1f87667f750800000000000000
+      internalID: 6338647670189321466
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LineCard_0: 7965479303314324529
+      AttaqueBoxH_0: 6338647670189321466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

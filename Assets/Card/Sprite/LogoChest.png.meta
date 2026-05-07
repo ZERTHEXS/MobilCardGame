@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: df5706635f7e8a74bbd8be682354ea75
+guid: effade8e821dc4546837e3f1c598a4fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7965479303314324529
-    second: LineCard_0
+      213: -624726402708522633
+    second: LogoChest_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LineCard_0
+      name: LogoChest_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 713
-        height: 995
+        width: 96
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13cb6c339311b8e60800000000000000
-      internalID: 7965479303314324529
+      spriteID: 77930cc85a68457f0800000000000000
+      internalID: -624726402708522633
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LineCard_0: 7965479303314324529
+      LogoChest_0: -624726402708522633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

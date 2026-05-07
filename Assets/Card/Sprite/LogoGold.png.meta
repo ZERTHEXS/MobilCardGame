@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: df5706635f7e8a74bbd8be682354ea75
+guid: 1b533cad0faa73f44ae5977f263fa3e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7965479303314324529
-    second: LineCard_0
+      213: -6981999025692334033
+    second: LogoGold_0
+  - first:
+      213: -3745766188900665185
+    second: LogoGold_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LineCard_0
+      name: LogoGold_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 713
-        height: 995
+        x: 39
+        y: 135
+        width: 12
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13cb6c339311b8e60800000000000000
-      internalID: 7965479303314324529
+      spriteID: f282c7bd0e4fa1f90800000000000000
+      internalID: -6981999025692334033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoGold_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 92
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9838e24f7d540cc0800000000000000
+      internalID: -3745766188900665185
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LineCard_0: 7965479303314324529
+      LogoGold_0: -6981999025692334033
+      LogoGold_1: -3745766188900665185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

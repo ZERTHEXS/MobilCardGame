@@ -15,6 +15,10 @@ public class CardSlot : MonoBehaviour
         card.currentSlot = this;
 
         card.view.transform.position = visualPoint.position;
+        if (card.currentSlot.slotType == SlotType.A1 || card.currentSlot.slotType == SlotType.B1)
+        {
+            card.view.transform.localScale = new Vector3(1.5f,1.5f,1.5f);
+        }
     }
 
 

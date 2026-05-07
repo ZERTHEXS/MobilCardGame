@@ -23,11 +23,5 @@ MonoBehaviour:
   - type: 4
     value: 1
     heritage: 0
-  - type: 3
-    value: 2
-    heritage: 0
-  - type: 3
-    value: 1
-    heritage: 0
   cardEffect:
   - {fileID: 0}
